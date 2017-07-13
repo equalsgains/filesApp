@@ -15,7 +15,7 @@ class DocsController < ApplicationController
 		@doc = Doc.new(doc_params)
 
 		if @doc.save
-			redirect_to @doc
+		redirect_to @doc
 		else 
 			render 'new'
 		end
